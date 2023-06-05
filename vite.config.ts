@@ -1,9 +1,14 @@
 import { Alias, defineConfig, loadEnv, PluginOption, type UserConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import Components from 'unplugin-vue-components/vite';
+import { VantResolver } from 'unplugin-vue-components/resolvers';
 import path from 'path'
 
 const plugins: PluginOption[] = [
-  vue({ reactivityTransform: true })
+  vue({ reactivityTransform: true }),
+  Components({
+    resolvers: [VantResolver()],
+  })
 ]
 
 // https://vitejs.dev/config/
