@@ -1,5 +1,5 @@
 <template>
-    <div>500</div>
+    <div class="v-500">500</div>
 </template>
 
 <script lang="ts" src="./index.ts"></script>

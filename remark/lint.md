@@ -69,6 +69,31 @@ pnpm add prettier -D
 touch .prettierrc.js
 ```
 
+## 配置 husky
+
+安装依赖
+
+```bash
+pnpm add husky -D
+```
+
+使用
+
+```bash
+// package.json
+{
+    "scripts": {
+        ...
+        "prepare": "husky install"
+    },
+}
+
+// 执行后生成 .husky 文件夹
+pnpm prepare
+// 添加 pre-commit 钩子文件
+pnpm husky add .husky/pre-commit
+```
+
 ## 参考
 
 [eslint + stylelint + prettier](https://juejin.cn/post/7118294114734440455)

@@ -5,6 +5,10 @@ import type { RouteRecordRaw } from 'vue-router';
  */
 export const commonRoutes: RouteRecordRaw[] = [
     {
+        path: '/',
+        redirect: '/login',
+    },
+    {
         name: 'login',
         path: '/login',
         meta: {
