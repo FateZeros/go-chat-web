@@ -12,7 +12,7 @@ const plugins: PluginOption[] = [
 ]
 
 // https://vitejs.dev/config/
-export default defineConfig(({ command, mode }): UserConfig => {
+export default defineConfig(({ mode }): UserConfig => {
   // 环境变量
   const env = loadEnv(mode, __dirname, '');
 
@@ -32,6 +32,9 @@ export default defineConfig(({ command, mode }): UserConfig => {
     plugins,
     resolve: {
       alias
+    },
+    build: {
+      sourcemap
     }
   }
 })
