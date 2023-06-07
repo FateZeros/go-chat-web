@@ -69,6 +69,16 @@ pnpm add prettier -D
 touch .prettierrc.js
 ```
 
+## lint-staged
+
+`lint-staged` 是一个对 git 暂存区代码进行格式化的工具
+
+```bash
+pnpm add lint-staged -D
+
+// 在 package.json 中加入 lint-staged 配置
+```
+
 ## 配置 husky
 
 安装依赖
